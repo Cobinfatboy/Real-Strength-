@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calisthenics Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game">
+    <header>
+      <h1>Calisthenics Hero</h1>
+      <p>Level: <span id="level">1</span> | XP: <span id="xp">0</span>/100</p>
+    </header>
+
+    <div class="stats">
+      <button onclick="addXP('pushup')">Push-Up</button>
+      <button onclick="addXP('pullup')">Pull-Up</button>
+      <button onclick="addXP('squat')">Squat</button>
+    </div>
+
+    <div class="progress">
+      <div id="xpBar"></div>
+    </div>
+
+    <div class="boss">
+      <h2>Boss: The Gym Demon</h2>
+      <p>HP: <span id="bossHp">100</span>/100</p>
+      <button onclick="fightBoss()">FIGHT!</button>
+    </div>
+
+    <footer>
+      <p>Earn XP to level up and beat the boss!</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
